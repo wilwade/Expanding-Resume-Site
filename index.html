@@ -1,0 +1,621 @@
+<!-- How to use:
+
+Initial setup:
+Find and replace (search including the brackets):
+[first_letter] -> First letter of your first name
+[second_letter] -> First letter of your last name
+[first_name] -> Your first name, without the first letter
+[second_name] -> Your last name, without the first letter
+[name] -> Your name, but there is a max length of about 13 charicters in the design.
+[description] -> A short description of who you are, what you want to show in search engines
+[url] -> Your url without the http://
+[email] -> Your email
+[phone] -> Just use the one that actually gets you.
+[linkedin] -> Linkedin username
+
+
+Details:
+Locate any spot that has [details] and fill in with your correct information. Remember you can duplicate most sections without trouble.
+
+Replace favicon.png, favicon.ico and apple-touch-icon.png with your own.
+
+Get rid of a lot of the comments before using, but remember to attribute the design.
+ -->
+
+<!doctype html>
+<html lang="en">
+<!-- 
+Note the site layout, design, and custom javascript are licensed under a Creative Commons Attribution 3.0 Unported License.
+Design is by www.willmwade.com.
+ -->
+<head>
+	<meta charset="utf-8" />
+
+	<title>[name] | [url]</title>
+	<meta name="description" content="[description]" />
+	<meta name="author" content="[name]" />
+	<meta name="designer" content="Wil Wade" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<base href="http://[url]" />	
+
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.ba-throttle-debounce.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.easing.1.3.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.viewport.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<!-- End Scripts -->
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<link rel="icon" type="image/png" href="favicon.png" />
+
+</head>
+
+<body>
+<!-- Define Header -->
+<header>
+<h1><span id="first_letter">[first_letter]</span><span id="first_name">[first_name]</span> <span id="second_letter">[second_letter]</span><span id="second_name">[second_name]</span></h1>
+</header>
+<!-- End Header -->
+<!-- Define Navigation/Menu -->
+<nav>
+<!-- Vertical Bars -->
+<div id="div_nav_user_name" class="nav_div not_screen_small"><div class="div_nav_expand"></div></div>
+<div id="div_nav_solutions" class="nav_div not_screen_small"><div class="div_nav_expand"></div></div>
+<div id="div_nav_projects" class="nav_div not_screen_small"><div class="div_nav_expand"></div></div>
+<div id="div_nav_history" class="nav_div not_screen_small"><div class="div_nav_expand"></div></div>
+<div id="div_nav_contact" class="nav_div not_screen_small"><div class="div_nav_expand"></div></div>
+<!-- End Vertical Bars -->
+
+<ul id="top_nav"> 
+<li class="navli linav_user_name" id="linav_user_name"><a href="#user_name" class="nojs">
+<span class="not_screen_small">[name]</span><span class="screen_small">About Me</span>
+</a></li>
+<li class="navli linav_solutions" id="linav_solutions"><a href="#solutions" class="nojs">
+Solutions
+</a>
+</li>
+<li class="navli linav_projects" id="linav_projects"><a href="#projects" class="nojs">
+Projects
+</a>
+</li>
+<li class="navli linav_history" id="linav_history"><a href="#history" class="nojs">
+History
+</a>
+</li>
+<li class="navli linav_contact" id="linav_contact"><a href="#contact" class="nojs">
+Contact
+</a></li>
+</ul>
+<br class="small_screen clear" />
+</nav>
+<!-- End Navigation -->
+
+<!-- Main content area -->
+<div id="content">
+
+<!-- Front Page -->
+<section id="user_name" class="nav_sections">
+<h2 class="screen_small">About Me</h2>
+
+<article>
+<h3 class="short_top_margin">Philosophy</h3>
+<ul id="philosophy_list">
+<li>
+[Details] - What are your driving ideals?
+</li>
+<li>
+And another?
+</li>
+<li>
+And another?
+</li>
+<li>
+And another, but you don't want too many.
+</li>
+</ul>
+</article>
+
+<article>
+<h3>Currently</h3>
+<p>
+[details] What are you up to right now? Projects?
+</p>
+</article>
+
+<article>
+<h3>Employment</h3>
+<p>
+[details] Are you looking?
+
+<!-- This is how you link to the contact section --><a href="#contact" class="smooth_scroll">contact me</a>.
+</p>
+</article>
+
+<article>
+<h3>Freelance Work</h3>
+<p>
+[details] Do you do freelance? If not remove this &gt;article&lt;?
+</p>
+</article>
+
+<article>
+<h3>Speaking</h3>
+<p>
+[details] Do you do speaking? If not remove this &gt;article&lt;?
+</p>
+<ul>
+<li>You speak on...</li>
+<li>The Life of Ada Lovelace</li>
+<li>Oranges</li>
+<li>Open Source Software</li>
+</ul>
+</article>
+
+
+<a id="nav_user_name" class="nav_anchors"></a> <!-- This is what makes sure the highlighted items are correct. -->
+</section>
+
+<!-- End Front Page -->
+
+<!-- Solutions -->
+<!-- 
+[details] This is the first real section of the site.
+Below you will add solutions you have provided to anyone.
+Remember try to be descriptive of the problem and your fix.
+ -->
+<section id="solutions" class="nav_sections page_break">
+<h2>Solutions</h2>
+<!-- Intorduction to Solutions -->
+<p>
+[details] Provide an introduction to your solutions. What drove them? Perhaps what connects the different selections into one theme.
+</p>
+
+<!-- First Section of Solutions -->
+<!-- To make more sections, just copy and paste from here through to End First Section of Solutions and paste it right below -->
+<section>
+<h3>[details] A theme to the below group of your solutions</h3>
+
+<!-- START First Solution -->
+<article>
+<h4>[details] Your first solution</h4>
+<p>
+[details] A quick paragraph describing the solution. Short. Very short. People not interested in this solution will then skip over it.
+</p>
+<a href="#" class="learn_more">Learn more...</a> <!-- If people are interested... -->
+<section class="learn_more"><!-- START the Learn more... section -->
+
+<p>
+[details] Here tell the full story of the solution. Go ahead and be a bit long if need be. Remember that this is hidden unless someone
+clicks the "Learn more..." button, so only interested people should see it.
+</p>
+
+<p>
+[details] Don't forget to use paragraphs to break up your story, and you can even use images or lists.
+</p>
+
+</section><!-- END of the Learn more... section -->
+</article>
+<!-- END First Solution -->
+
+<!-- START Solution -->
+<article>
+<h4>[details] Your second solution</h4>
+<p>
+[details] Example list.
+<br />
+List Title:
+</p>
+
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+</ul>
+
+<a href="#" class="learn_more">[details] Here is a Learn more... link, but you can make it say anything.</a>
+<section class="learn_more">
+
+<p>
+[details] More List Examples, with some links.
+</p>
+
+<p>[details] What I used to build this site:</p>
+<ul>
+<li>HTML5/CSS3/Javascript</li>
+<li><a href="http://jquery.com" target="_blank">jQuery</a></li>
+<li>[details] Lots more, but see that link above?</li>
+</ul>
+
+<p>
+[details]
+Here is another parpagraph, but also a link to: <a href="#history" class="smooth_scroll">History</a>
+</p>
+
+</section>
+</article>
+<!-- END Solution -->
+
+<!-- START Solution -->
+<article>
+<h4>[details] Title</h4>
+
+<p>
+[details] Remember that these are all under one general solution heading.
+You will want to add more general solution headings and specific solutions under those.
+</p>
+
+<p>
+[details] This solution has no learn more. Solutions that are quite short can be used like this.
+</p>
+
+</article>
+<!-- END Solution -->
+
+</section>
+<!-- END First Section of Solutions -->
+<!-- Paste the first section of solutions here to create another one! -->
+
+
+<a id="nav_solutions" class="nav_anchors"></a>
+</section>
+<!-- End Solutions -->
+
+
+<!-- Projects -->
+<!-- Projects are different than solutions. This might be more personal, or just incomplete solutions. -->
+<section id="projects" class="nav_sections page_break">
+<h2>Projects</h2>
+
+<!-- START First Section of Projects -->
+<!-- Just like with solutions, projects have two layers. General categories and then specific projects. -->
+<section>
+<h3>[details] Perhaps some Research?</h3>
+
+<!-- START First Project -->
+<article>
+<h4>[details] Cool Project</h4>
+
+<p>
+[Details] Short summary.
+</p>
+
+<a href="#" class="learn_more">Learn more...</a>
+
+<section class="learn_more">
+<p>
+[details] Here is the spot for details.
+</p>
+
+<p>
+[details] Don't forget paragraphs, images, and lists!
+</p>
+
+</section>
+</article>
+<!-- END First Project -->
+</section>
+<!-- END First Section of Projects -->
+
+<!-- START Section of Projects -->
+<section>
+<h3>[details] General Category</h3>
+
+<!-- START Project -->
+<article>
+
+<p>
+[details] This is one without a "Learn more..." section.
+</p>
+
+</article>
+<!-- END Project -->
+
+</section>
+<!-- END Section of Projects -->
+
+<!-- START Section of Projects -->
+<section>
+<h3>[details] General Title Again</h3>
+
+<!-- START Project -->
+<article>
+<h4>[details] Details, Details</h4>
+
+<p>
+[details] Don't forget those web links to your work! <a href="http://www.browsetheriver.com" class="no_href" title="Visit Browse The River in a new tab or window." target="_blank">www.BrowseTheRiver.com</a>
+</p>
+
+<a href="#" class="learn_more">Learn more...</a>
+
+<section class="learn_more">
+<p>
+[details] Are you learning more?
+</p>
+
+<p>
+[details] Don't forget to proof and spell check!
+</p>
+
+</section>
+
+</article>
+<!-- END Project -->
+
+</section>
+<!-- END Section of Projects -->
+
+
+<a id="nav_projects" class="nav_anchors"></a>
+</section>
+<!-- End Projects -->
+
+<!-- History -->
+<!-- Employment and education history. Be brief.  -->
+<section id="history" class="nav_sections page_break">
+<h2>History</h2>
+
+<p>
+[details] Short overview of your employment
+</p>
+
+<!-- START Full-time employment section -->
+<section>
+<h3>Full-Time Employment</h3>
+
+<!-- START Company -->
+<article>
+
+<h4>[details] Company Name</h4>
+
+<dl>
+
+<dt>Employment Dates</dt>
+<dd>[details] When - Current</dd>
+
+<dt>Position</dt>
+<dd>[details] title</dd>
+
+<dt>Function &amp; Accomplishments</dt>
+
+<dd>[details] A basic list of what you did</dd>
+<dd>Repaired Stuff</dd>
+<dd>Completed Other Stuff</dd>
+
+</dl>
+</article>
+<!-- END Company -->
+
+<!-- START Company -->
+<article>
+
+<h4>[details] Company Name</h4>
+
+<dl>
+
+<dt>Employment Dates</dt>
+<dd>[details] When - Current</dd>
+
+<dt>Position</dt>
+<dd>[details] title</dd>
+
+<dt>Function &amp; Accomplishments</dt>
+
+<dd>[details] A basic list of what you did</dd>
+<dd>Repaired Stuff</dd>
+<dd>Completed Other Stuff</dd>
+
+</dl>
+</article>
+<!-- END Company -->
+
+</section>
+<!-- END Full-time employment section -->
+
+<!-- START Part-time employment section -->
+<section>
+<h3>Part-Time Employment</h3>
+
+<!-- START Company -->
+<article>
+
+<h4>[details] Company Name</h4>
+
+<dl>
+
+<dt>Employment Dates</dt>
+<dd>[details] When - Current</dd>
+
+<dt>Position</dt>
+<dd>[details] title</dd>
+
+<dt>Function &amp; Accomplishments</dt>
+
+<dd>[details] A basic list of what you did</dd>
+<dd>Repaired Stuff</dd>
+<dd>Completed Other Stuff</dd>
+
+</dl>
+</article>
+<!-- END Company -->
+
+<!-- START Company -->
+<article>
+
+<h4>[details] Company Name</h4>
+
+<dl>
+
+<dt>Employment Dates</dt>
+<dd>[details] When - Current</dd>
+
+<dt>Position</dt>
+<dd>[details] title</dd>
+
+<dt>Function &amp; Accomplishments</dt>
+
+<dd>[details] A basic list of what you did</dd>
+<dd>Repaired Stuff</dd>
+<dd>Completed Other Stuff</dd>
+
+</dl>
+</article>
+<!-- END Company -->
+
+</section>
+<!-- END Part-time employment section -->
+
+<!-- START Contract employment section -->
+<section>
+<h3 id="contract_jobs">Contract Jobs</h3>
+
+<!-- START Job 1 -->
+<article>
+<h4>[details] Contract Job 1</h4>
+
+<ul class="list_none">
+
+<li>
+[details] Lists are great for this section.
+</li>
+
+<li>
+[details] List Item 2
+</li>
+
+</ul>
+
+</article>
+<!-- END Job 1 -->
+
+<!-- START Job 2 -->
+<article>
+<h4>[details] Contract Job 2</h4>
+<p>
+[details] Simple single line explinations
+</p>
+
+</article>
+<!-- END Job 2 -->
+
+</section>
+<!-- END Contract employment section -->
+
+<!-- START Education section -->
+<section>
+<h3>Education</h3>
+
+<!--
+I suggest only Undergraduate and above.
+Leave out the entire education section if you do not have an Undergraduate degree.
+This allows visitors to focus on what your accomplishments are not your lack of perhaps unneeded education.
+ -->
+<article>
+<h4>Undergraduate</h4>
+
+<dl>
+<dt>College</dt>
+
+<dd><a href="http://www.bryan.edu" title="Visit the College Website">[details] College Name, and add the link as well</a></dd>
+
+<dt>Degree Earned</dt>
+<dd>[details] Degree (year)</dd>
+
+<dt>Minor</dt>
+<dd>[details] You did get a minor right?</dd>
+
+<dt>Honors</dt>
+
+<dd>[details] Dean's List</dd>
+<dd>[details] Who's Who Among Students in American Colleges and Universities</dd>
+
+</dl>
+
+</article>
+
+</section>
+
+<a id="nav_history" class="nav_anchors"></a>
+</section>
+<!-- End History -->
+
+
+<!-- Contact -->
+<section id="contact" class="nav_sections page_break">
+<h2>Contact</h2>
+<article>
+
+<p>[details] How is best to get you?
+Email is the preferred method of communication. I do try to respond to all requests.
+If you have not received a response within two business days, please try again.
+It is likely that spam filters have become overzealous again.</p>
+
+<dl>
+<dt>Email</dt>
+<dd><a href="mailto:[email]">[email]</a></dd>
+
+<dt>Phone</dt>
+<dd><a href="tel:[phone]">[phone]</a></dd>
+
+<dt>Online Networks</dt>
+<dd><a href="http://www.linkedin.com/in/[linkedin]" title="View my Linkedin Profile" target="_blank">Linkedin</a></dd>
+<dd><a href="[details]" title="View my Google+ Profile" target="_blank">Google+</a></dd>
+<!-- [details] You might want to add Facebook, Twitter, Tumblr, Blogs, etc... -->
+
+<dt>Address</dt>
+<dd><address>
+[details] Address Line 1
+<br />
+[details] City State Zip
+</address></dd>
+
+</dl>
+</article>
+
+
+<a id="nav_contact" class="nav_anchors"></a>
+</section>
+<!-- End Contact -->
+
+</div>
+<!-- End of Main content area -->
+
+<!-- Footer -->
+<footer>
+<!-- Duplicate nav at the bottom for small screens -->
+<nav class="screen_small">
+<ul>
+<li class="navli linav_user_name"><a href="#user_name" class="nojs">
+About Me
+</a></li>
+<li class="navli linav_solutions"><a href="#solutions" class="nojs">
+Solutions
+</a>
+</li>
+<li class="navli linav_projects"><a href="#projects" class="nojs">
+Projects
+</a>
+</li>
+<li class="navli linav_history"><a href="#history" class="nojs">
+History
+</a>
+</li>
+<li class="navli linav_contact"><a href="#contact" class="nojs">
+Contact
+</a></li>
+</ul>
+</nav>
+<!-- End Navigation -->
+<span id="not_small_for_jquery">&nbsp;</span>
+</footer>
+<!-- End of Footer -->
+<!-- hcard -->
+<div id="hcard" class="vcard">
+ <span class="fn">[name]</span>
+ <div class="org">[url]</div>
+ <a class="email" href="mailto:[email]">[email]</a>
+ <div class="tel">[phone]</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  William Wade
+  Site: willmwade.com
+  Location: Wooster, Ohio
+
+/* THANKS */
+  HTML Boilerplate, Linux 
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery
+  Software: Bluefish
